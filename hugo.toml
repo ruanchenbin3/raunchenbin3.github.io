@@ -54,7 +54,13 @@ theme = 'PaperMod'
     minMatchCharLength = 0
     keys = ["title", "permalink", "summary", "content"]
 
-# 社交图标已禁用
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ruanchenbin3"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:ruanchenbin3@gmail.com"
 
 [menu]
   [[menu.main]]
@@ -63,20 +69,10 @@ theme = 'PaperMod'
     url = '/'
     weight = 10
   [[menu.main]]
-    identifier = 'posts'
-    name = '文章'
-    url = '/posts/'
-    weight = 20
-  [[menu.main]]
-    identifier = 'about'
-    name = '关于'
-    url = '/about/'
-    weight = 30
-  [[menu.main]]
     identifier = 'search'
     name = '搜索'
     url = '/search/'
-    weight = 40
+    weight = 20
 
 [markup.goldmark.renderer]
   unsafe = true
