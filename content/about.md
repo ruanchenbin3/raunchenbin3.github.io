@@ -13,6 +13,6 @@ draft: false
 ### 联系方式
 
 - GitHub: [raunchenbin3](https://github.com/raunchenbin3)
-- Email: your@email.com
+- Email: ruanchenbin3@gmail.com
 
 欢迎交流！
