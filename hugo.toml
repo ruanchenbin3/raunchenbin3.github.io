@@ -1,4 +1,4 @@
-baseURL = 'https://raunchenbin3.github.io'
+baseURL = 'https://ruanchenbin3.github.io/raunchenbin3.github.io'
 languageCode = 'zh-CN'
 title = '先生的博客'
 theme = 'PaperMod'
@@ -21,7 +21,12 @@ theme = 'PaperMod'
   hideSummary = false
   showtoc = false
   tocopen = false
-
+  
+  # 外观优化
+  defaultTheme = "auto"  # 自动切换暗黑/亮色模式
+  disableThemeToggle = false
+  
+  # 首页配置
   [params.profileMode]
     enabled = true
     title = "先生的博客"
@@ -30,10 +35,28 @@ theme = 'PaperMod'
     imageWidth = 120
     imageHeight = 120
     imageTitle = ""
+    
+  # 首页按钮
+  [[params.profileMode.buttons]]
+    name = "文章"
+    url = "/posts/"
+  [[params.profileMode.buttons]]
+    name = "关于"
+    url = "/about/"
+
+  # 搜索功能
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/raunchenbin3"
+  url = "https://github.com/ruanchenbin3"
 
 [[params.socialIcons]]
   name = "email"
@@ -55,6 +78,14 @@ theme = 'PaperMod'
     name = '关于'
     url = '/about/'
     weight = 30
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 40
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

@@ -4,6 +4,12 @@ date: 2026-03-11T18:37:00+08:00
 draft: false
 tags: ["生活", "开始"]
 categories: ["随笔"]
+cover:
+    image: ""
+    alt: ""
+    caption: ""
+    relative: false
+    hidden: false
 ---
 
 ## 欢迎来到我的博客

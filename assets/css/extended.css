@@ -1,0 +1,106 @@
+/* 自定义样式 */
+
+/* 首页标题样式 */
+.profile .profile_inner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile .profile_inner .profile-subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-top: 0.5rem;
+}
+
+/* 按钮样式优化 */
+.profile .button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.profile .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* 文章卡片样式 */
+.post-entry {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+.post-entry:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.post-entry .entry-header h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* 代码块样式 */
+.post-content pre {
+    border-radius: 8px;
+    background: #1a1a2e;
+}
+
+/* 引用样式 */
+.post-content blockquote {
+    border-left: 4px solid #667eea;
+    background: rgba(102, 126, 234, 0.05);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.5rem;
+}
+
+/* 标签样式 */
+.post-tags a {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    border-radius: 15px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.post-tags a:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* 导航栏样式 */
+.nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.dark .nav {
+    background: rgba(29, 30, 32, 0.8);
+}
+
+/* 社交图标 */
+.social-icons a {
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #667eea;
+}
+
+/* 页脚样式 */
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+}
